@@ -1,0 +1,166 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #7b7b7b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    height: 110px;
+    right: 88vw;
+    margin-top: -40em;
+}
+
+.container {
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #4d4d4d;
+    font-size: 24px;
+}
+
+.cubes-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cube, .cube1 {
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.cube {
+    background-color: #ffffff;
+    border: 1px solid #b9b9b9;
+}
+
+.cube1 {
+    background-color: #006ADD;
+    border: 1px solid #6d6d6d;
+}
+
+.cube img, .cube1 img {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+/* Separator styles */
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.separator .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #d5d5d5;
+    margin: 0 10px;
+}
+
+.separator span {
+    font-weight: bold;
+    color: #808080;
+    font-size: 2px;
+}
+
+/* Input and button styles */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6501df;
+    outline: none;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.remember-me label {
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+.btn-connect {
+    width: 100%;
+    padding: 17px;
+    background-color: #6501df;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-connect:hover {
+    background-color: #5a01c7;
+}
+
+.btn-forgot {
+    background-color: transparent;
+    color: #6501df;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.text-main {
+    color: black;
+    font-weight: bold;
+}
+
+.link-plan {
+    color: #6501df;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-plan:hover {
+    text-decoration: underline;
+}
